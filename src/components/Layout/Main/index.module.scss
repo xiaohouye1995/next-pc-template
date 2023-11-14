@@ -1,0 +1,46 @@
+.main {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    font-size: 16px;
+
+    .banner {
+        height: 280px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        margin: 20px auto;
+        width: 1024px;
+        height: 1000px;
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        margin-top: 20px;
+        width: px2vw(100);
+        height: px2vw(100);
+        background: red;
+    }
+
+    :global {
+        .iconfont {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    }
+}

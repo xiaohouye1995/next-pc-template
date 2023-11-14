@@ -1,0 +1,63 @@
+{
+  "name": "next-pc-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node server.js",
+    "build": "next build",
+    "build:test": "cross-env NODE_ENV=test next build",
+    "build:prod": "cross-env NODE_ENV=production next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "commit": "cz",
+    "lint-staged": "lint-staged",
+    "eslint": "eslint --ext .js,.jsx,.tsx,.ts --fix ./src",
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run eslint",
+      "prettier .prettierrc.js --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.17.2",
+    "@reduxjs/toolkit": "^1.9.7",
+    "antd": "^5.11.0",
+    "axios": "^1.6.1",
+    "next": "14.0.1",
+    "nextjs-toploader": "^1.6.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^8.1.3",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.1",
+    "@commitlint/config-conventional": "^18.4.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "commitizen": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "typescript": "^5"
+  }
+}

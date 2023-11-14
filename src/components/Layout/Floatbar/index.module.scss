@@ -1,0 +1,9 @@
+.backTop {
+    &:hover {
+        :global {
+            .ant-float-btn-icon {
+                color: #c83232 !important;
+            }
+        }
+    }
+}

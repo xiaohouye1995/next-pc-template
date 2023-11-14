@@ -13,7 +13,7 @@
     "commit": "cz",
     "lint-staged": "lint-staged",
     "eslint": "eslint --ext .js,.jsx,.tsx,.ts --fix ./src",
-    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

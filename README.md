@@ -7,13 +7,13 @@
 // 安装
 pnpm install
 
-// 本地启动
+// 启动
 pnpm dev
 
-// 部署测试环境
+// 打包测试环境
 pnpm build:prod
 
-// 部署生产环境
+// 打包生产环境
 pnpm build:prod
 
 // 注意！代码提交需要使用

@@ -4,9 +4,19 @@
 ## 使用
 
 ```
-npm install
+// 安装
+pnpm install
 
-npm run dev
+// 本地启动
+pnpm dev
 
-npm run build
+// 部署测试环境
+pnpm build:prod
+
+// 部署生产环境
+pnpm build:prod
+
+// 注意！代码提交需要使用
+git add .
+pnpm commit
 ```

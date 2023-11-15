@@ -11,7 +11,7 @@ pnpm install
 pnpm dev
 
 // 打包测试环境
-pnpm build:prod
+pnpm build:test
 
 // 打包生产环境
 pnpm build:prod

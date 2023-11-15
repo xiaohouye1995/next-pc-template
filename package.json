@@ -8,6 +8,7 @@
     "build:test": "cross-env NODE_ENV=test next build",
     "build:prod": "cross-env NODE_ENV=production next build",
     "start": "next start",
+    "deploy:test": "npm run build:test && npm run start",
     "lint": "next lint",
     "prepare": "husky install",
     "commit": "cz",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
+    "@ant-design/icons": "^5.2.6",
     "@reduxjs/toolkit": "^1.9.7",
     "antd": "^5.11.0",
     "axios": "^1.6.1",

@@ -8,7 +8,7 @@
     "build:test": "cross-env NODE_ENV=test next build",
     "build:prod": "cross-env NODE_ENV=production next build",
     "start": "next start",
-    "deploy:test": "npm run build:test && npm run start",
+    "deploy:test": "npm run build:test && pm2 start",
     "lint": "next lint",
     "prepare": "husky install",
     "commit": "cz",

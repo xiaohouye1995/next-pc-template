@@ -1,5 +1,5 @@
 'use client'
-
+import { useEffect } from 'react'
 import Link from 'next/link'
 import { useSelector, useDispatch } from '@/store/store'
 import { getMenusTitile } from '@/store/models/global'
@@ -23,6 +23,13 @@ export default function Header() {
       link: '/menu2'
     }
   ]
+
+  useEffect(() => {
+    const title = localStorage.getItem('menusTitle')
+    if (title) {
+      dispatch(getMenusTitile(title))
+    }
+  }, [])
 
   const handleMenusClick = (title: string) => {
     dispatch(getMenusTitile(title))

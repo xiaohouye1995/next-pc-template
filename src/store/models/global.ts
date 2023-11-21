@@ -6,7 +6,7 @@ interface GlobalState {
 }
 
 const initialState: GlobalState = {
-  menusTitle: '首页',
+  menusTitle: '',
   token: '123456'
 }
 
@@ -16,6 +16,7 @@ const global = createSlice({
   reducers: {
     getMenusTitileSuccess(state, action) {
       state.menusTitle = action.payload
+      localStorage.setItem('menusTitle', action.payload)
     }
   }
 })

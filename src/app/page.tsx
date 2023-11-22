@@ -1,5 +1,5 @@
-import Main from '@/components/Layout/Main'
+import HomePage from '@/components/Layout/Home'
 
 export default function Home() {
-  return <Main />
+  return <HomePage />
 }

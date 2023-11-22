@@ -1,8 +1,8 @@
 import styles from './index.module.scss'
 
-export default function Main() {
+export default function Home() {
   return (
-    <div className={styles.main}>
+    <div className={styles.home}>
       <div className={styles.banner}>
         <div className={styles.title}>banner</div>
         <div>这是一个轮播图轮播图轮播图轮播图轮播图轮播图</div>

@@ -28,12 +28,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <StyledComponentsRegistry>
             <ConfigProvider theme={theme}>
               <NextTopLoader color='#c83232' />
-              <main className='wrapper'>
-                <Header />
-                {children}
-                <Floatbar />
-                <Footer />
-              </main>
+              <Header />
+              <main>{children}</main>
+              <Floatbar />
+              <Footer />
             </ConfigProvider>
           </StyledComponentsRegistry>
         </body>
